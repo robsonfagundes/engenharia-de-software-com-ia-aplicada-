@@ -1,2 +1,9 @@
-# engenharia-de-software-com-ia-aplicada-
-Códigos e referências usados na Pós de Engenharia de Software com IA Aplicada 
+# Engenharia de Software com IA Aplicada
+
+A Inteligência Artificial deixou de ser uma tendência emergente para se tornar um pilar central da transformação digital nas organizações públicas e privadas. A integração entre engenharia de software e IA representa hoje uma das fronteiras mais avançadas da inovação tecnológica, impulsionando áreas como automação industrial, análise preditiva, saúde digital, cidades inteligentes e sistemas autônomos. Diante desse cenário, o mercado demanda profissionais capazes de conceber, desenvolver e implantar soluções inteligentes, aliando rigor técnico à compreensão ética e social do impacto das tecnologias emergentes.  
+
+No contexto contemporâneo, a produção e gestão de dados em larga escala desafiam as metodologias tradicionais de desenvolvimento de software.  Projetos modernos exigem arquiteturas capazes de aprender, adaptar-se e evoluir com base em dados e padrões complexos. Essa realidade evidencia a  necessidade de engenheiros e cientistas da computação com domínio sobre  aprendizado de máquina, redes neurais, processamento de linguagem natural e engenharia de sistemas inteligentes — competências que são estruturantes nesta pós-graduação.  
+
+A formação proposta capacita o profissional para atuar Público em equipes multidisciplinares, integrando fundamentos da computação com metodologias ágeis e práticas de MLOps.
+
+Além do aspecto técnico, a relevância deste curso reside em preparar  profissionais para os desafios éticos, regulatórios e de sustentabilidade  associados à aplicação da inteligência artificial. A formação em “Engenharia  de Software em IA Aplicada” promove uma visão crítica e responsável sobre o  ciclo de vida dos sistemas inteligentes, abrangendo desde o design algorítmico até a implementação segura e transparente de soluções. Trata-se, portanto, de uma especialização estratégica para quem deseja ocupar posições de liderança e inovação em um mundo cada vez mais orientado por dados e automação inteligente
