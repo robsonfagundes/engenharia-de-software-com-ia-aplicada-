@@ -1,6 +1,6 @@
 # Engenharia de Software com IA Aplicada
 
-### Fundamentos de IA e LLMs para Programadores 
+### Modulo 01 - Fundamentos de IA e LLMs para Programadores 
 #### Professor: Erick Wendel,  
 Aluno: Robson Fagundes
 
