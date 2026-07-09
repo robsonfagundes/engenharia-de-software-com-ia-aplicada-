@@ -10,7 +10,7 @@
 ![Postgraduate](https://img.shields.io/badge/postgraduate-Applied%20AI-purple)
 ![Software Engineering](https://img.shields.io/badge/software-engineering-black)
 ![Artificial Intelligence](https://img.shields.io/badge/artificial-intelligence-green)
-![Medical Imaging](https://img.shields.io/badge/medical-imaging-cloud-lightgrey)
+![Medical Imaging Cloud](https://img.shields.io/badge/medical%20imaging-in%20the%20cloud-lightgrey)
 
 ---
 
@@ -108,27 +108,19 @@ My main goals during this journey are:
 
 ## Repository structure
 
-The initial structure of this repository may follow this organization:
+The repository is organized by subjects, modules and practical examples developed throughout the postgraduate program.
 
 ```text
 .
 ├── README.md
-├── classes/
-│   ├── module-01/
-│   ├── module-02/
-│   └── module-03/
-├── projects/
-│   ├── machine-learning/
-│   ├── nlp/
-│   ├── automation/
-│   └── mlops/
-├── notes/
-│   ├── software-engineering.md
-│   ├── artificial-intelligence.md
-│   └── references.md
-├── datasets/
-├── experiments/
-└── docs/
+├── 01-fundamentos-de-ia-e-llms/
+│   ├── README.md
+│   ├── modulo-02/
+│   └── modulo-03/
+├── docs/
+│   └── course-materials-and-references/
+└── imgs/
+    └── images-used-in-documentation/
 ```
 
 ---
