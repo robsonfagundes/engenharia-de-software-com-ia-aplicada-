@@ -51,7 +51,7 @@
                 "name": "Camiseta Estampada",
                 "category": "vestuário",
                 "price": 49.99,
-                "color": "vermelho"
+                "color": "branco"
             },
             {
                 "id": 5,
@@ -86,7 +86,7 @@
                 "name": "Tênis Esportivo",
                 "category": "calçados",
                 "price": 149.99,
-                "color": "branco"
+                "color": "vermelho"
             }
         ]
     },
@@ -107,7 +107,7 @@
                 "name": "Tênis Esportivo",
                 "category": "calçados",
                 "price": 149.99,
-                "color": "branco"
+                "color": "vermelho"
             },
             {
                 "id": 5,
@@ -115,6 +115,1581 @@
                 "category": "vestuário",
                 "price": 99.99,
                 "color": "azul"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Felipe Martins",
+        "age": 20,
+        "purchases": [
+            {
+                "id": 1,
+                "name": "Fones de Ouvido Sem Fio",
+                "category": "eletrônicos",
+                "price": 129.99,
+                "color": "preto"
+            },
+            {
+                "id": 3,
+                "name": "Caixa de Som Bluetooth",
+                "category": "eletrônicos",
+                "price": 89.99,
+                "color": "azul"
+            },
+            {
+                "id": 12,
+                "name": "Mouse Gamer",
+                "category": "eletrônicos",
+                "price": 86.9,
+                "color": "azul"
+            },
+            {
+                "id": 14,
+                "name": "Carregador Portátil",
+                "category": "eletrônicos",
+                "price": 160.9,
+                "color": "cinza"
+            },
+            {
+                "id": 4,
+                "name": "Camiseta Estampada",
+                "category": "vestuário",
+                "price": 49.99,
+                "color": "branco"
+            },
+            {
+                "id": 19,
+                "name": "Camisa Social",
+                "category": "vestuário",
+                "price": 345.9,
+                "color": "prata"
+            },
+            {
+                "id": 22,
+                "name": "Moletom com Capuz",
+                "category": "vestuário",
+                "price": 456.9,
+                "color": "azul"
+            },
+            {
+                "id": 25,
+                "name": "Polo Básica",
+                "category": "vestuário",
+                "price": 116.9,
+                "color": "vermelho"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Gabriela Rocha",
+        "age": 27,
+        "purchases": [
+            {
+                "id": 5,
+                "name": "Calça Jeans Slim",
+                "category": "vestuário",
+                "price": 99.99,
+                "color": "azul"
+            },
+            {
+                "id": 19,
+                "name": "Camisa Social",
+                "category": "vestuário",
+                "price": 345.9,
+                "color": "prata"
+            },
+            {
+                "id": 21,
+                "name": "Bermuda de Sarja",
+                "category": "vestuário",
+                "price": 419.9,
+                "color": "preto"
+            },
+            {
+                "id": 23,
+                "name": "Saia Plissada",
+                "category": "vestuário",
+                "price": 493.9,
+                "color": "branco"
+            },
+            {
+                "id": 10,
+                "name": "Óculos de Sol",
+                "category": "acessórios",
+                "price": 89.99,
+                "color": "marrom"
+            },
+            {
+                "id": 36,
+                "name": "Bolsa Transversal",
+                "category": "acessórios",
+                "price": 72.9,
+                "color": "bege"
+            },
+            {
+                "id": 39,
+                "name": "Pulseira de Aço",
+                "category": "acessórios",
+                "price": 183.9,
+                "color": "prata"
+            },
+            {
+                "id": 9,
+                "name": "Mochila Executiva",
+                "category": "acessórios",
+                "price": 159.99,
+                "color": "cinza"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Henrique Alves",
+        "age": 34,
+        "purchases": [
+            {
+                "id": 26,
+                "name": "Bota de Couro",
+                "category": "calçados",
+                "price": 153.9,
+                "color": "bege"
+            },
+            {
+                "id": 28,
+                "name": "Chinelo Conforto",
+                "category": "calçados",
+                "price": 227.9,
+                "color": "marrom"
+            },
+            {
+                "id": 30,
+                "name": "Tênis de Corrida",
+                "category": "calçados",
+                "price": 301.9,
+                "color": "rosa"
+            },
+            {
+                "id": 32,
+                "name": "Mocassim Clássico",
+                "category": "calçados",
+                "price": 375.9,
+                "color": "azul"
+            },
+            {
+                "id": 55,
+                "name": "Design de Sistemas",
+                "category": "livros",
+                "price": 324.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 58,
+                "name": "Engenharia de Software Moderna",
+                "category": "livros",
+                "price": 435.9,
+                "color": "marrom"
+            },
+            {
+                "id": 51,
+                "name": "Fundamentos de Inteligência Artificial",
+                "category": "livros",
+                "price": 176.9,
+                "color": "preto"
+            },
+            {
+                "id": 54,
+                "name": "Algoritmos e Estruturas de Dados",
+                "category": "livros",
+                "price": 287.9,
+                "color": "cinza"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Isabela Ribeiro",
+        "age": 41,
+        "purchases": [
+            {
+                "id": 34,
+                "name": "Carteira de Couro",
+                "category": "acessórios",
+                "price": 449.9,
+                "color": "cinza"
+            },
+            {
+                "id": 36,
+                "name": "Bolsa Transversal",
+                "category": "acessórios",
+                "price": 72.9,
+                "color": "bege"
+            },
+            {
+                "id": 38,
+                "name": "Mala de Viagem",
+                "category": "acessórios",
+                "price": 146.9,
+                "color": "marrom"
+            },
+            {
+                "id": 40,
+                "name": "Chapéu de Palha",
+                "category": "acessórios",
+                "price": 220.9,
+                "color": "rosa"
+            },
+            {
+                "id": 47,
+                "name": "Jogo de Cama",
+                "category": "casa e cozinha",
+                "price": 479.9,
+                "color": "verde"
+            },
+            {
+                "id": 50,
+                "name": "Balança Digital de Cozinha",
+                "category": "casa e cozinha",
+                "price": 139.9,
+                "color": "rosa"
+            },
+            {
+                "id": 43,
+                "name": "Liquidificador",
+                "category": "casa e cozinha",
+                "price": 331.9,
+                "color": "branco"
+            },
+            {
+                "id": 46,
+                "name": "Toalha de Banho",
+                "category": "casa e cozinha",
+                "price": 442.9,
+                "color": "bege"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "João Carvalho",
+        "age": 48,
+        "purchases": [
+            {
+                "id": 45,
+                "name": "Conjunto de Potes",
+                "category": "casa e cozinha",
+                "price": 405.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 47,
+                "name": "Jogo de Cama",
+                "category": "casa e cozinha",
+                "price": 479.9,
+                "color": "verde"
+            },
+            {
+                "id": 49,
+                "name": "Aspirador Vertical",
+                "category": "casa e cozinha",
+                "price": 102.9,
+                "color": "prata"
+            },
+            {
+                "id": 41,
+                "name": "Cafeteira Elétrica",
+                "category": "casa e cozinha",
+                "price": 257.9,
+                "color": "preto"
+            },
+            {
+                "id": 69,
+                "name": "Capacete de Ciclismo",
+                "category": "esportes",
+                "price": 391.9,
+                "color": "prata"
+            },
+            {
+                "id": 62,
+                "name": "Colchonete de Yoga",
+                "category": "esportes",
+                "price": 132.9,
+                "color": "azul"
+            },
+            {
+                "id": 65,
+                "name": "Raquete de Tênis",
+                "category": "esportes",
+                "price": 243.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 68,
+                "name": "Kit de Faixas Elásticas",
+                "category": "esportes",
+                "price": 354.9,
+                "color": "marrom"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Karina Mendes",
+        "age": 55,
+        "purchases": [
+            {
+                "id": 56,
+                "name": "Python para Ciência de Dados",
+                "category": "livros",
+                "price": 361.9,
+                "color": "bege"
+            },
+            {
+                "id": 58,
+                "name": "Engenharia de Software Moderna",
+                "category": "livros",
+                "price": 435.9,
+                "color": "marrom"
+            },
+            {
+                "id": 60,
+                "name": "Introdução ao JavaScript",
+                "category": "livros",
+                "price": 58.9,
+                "color": "rosa"
+            },
+            {
+                "id": 52,
+                "name": "Redes Neurais na Prática",
+                "category": "livros",
+                "price": 213.9,
+                "color": "azul"
+            },
+            {
+                "id": 81,
+                "name": "Blocos de Montar",
+                "category": "brinquedos",
+                "price": 384.9,
+                "color": "preto"
+            },
+            {
+                "id": 84,
+                "name": "Boneca Articulada",
+                "category": "brinquedos",
+                "price": 495.9,
+                "color": "cinza"
+            },
+            {
+                "id": 87,
+                "name": "Pelúcia de Urso",
+                "category": "brinquedos",
+                "price": 155.9,
+                "color": "verde"
+            },
+            {
+                "id": 90,
+                "name": "Massinha de Modelar",
+                "category": "brinquedos",
+                "price": 266.9,
+                "color": "rosa"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Lucas Barbosa",
+        "age": 26,
+        "purchases": [
+            {
+                "id": 67,
+                "name": "Luva de Boxe",
+                "category": "esportes",
+                "price": 317.9,
+                "color": "verde"
+            },
+            {
+                "id": 69,
+                "name": "Capacete de Ciclismo",
+                "category": "esportes",
+                "price": 391.9,
+                "color": "prata"
+            },
+            {
+                "id": 61,
+                "name": "Bola de Futebol",
+                "category": "esportes",
+                "price": 95.9,
+                "color": "preto"
+            },
+            {
+                "id": 63,
+                "name": "Halter Emborrachado",
+                "category": "esportes",
+                "price": 169.9,
+                "color": "branco"
+            },
+            {
+                "id": 73,
+                "name": "Kit de Pincéis de Maquiagem",
+                "category": "beleza e cuidados",
+                "price": 88.9,
+                "color": "branco"
+            },
+            {
+                "id": 76,
+                "name": "Escova Alisadora",
+                "category": "beleza e cuidados",
+                "price": 199.9,
+                "color": "bege"
+            },
+            {
+                "id": 79,
+                "name": "Kit de Manicure",
+                "category": "beleza e cuidados",
+                "price": 310.9,
+                "color": "prata"
+            },
+            {
+                "id": 72,
+                "name": "Aparador de Barba",
+                "category": "beleza e cuidados",
+                "price": 51.9,
+                "color": "azul"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Mariana Freitas",
+        "age": 33,
+        "purchases": [
+            {
+                "id": 78,
+                "name": "Massageador Facial",
+                "category": "beleza e cuidados",
+                "price": 273.9,
+                "color": "marrom"
+            },
+            {
+                "id": 80,
+                "name": "Espelho com LED",
+                "category": "beleza e cuidados",
+                "price": 347.9,
+                "color": "rosa"
+            },
+            {
+                "id": 72,
+                "name": "Aparador de Barba",
+                "category": "beleza e cuidados",
+                "price": 51.9,
+                "color": "azul"
+            },
+            {
+                "id": 74,
+                "name": "Perfume Floral",
+                "category": "beleza e cuidados",
+                "price": 125.9,
+                "color": "cinza"
+            },
+            {
+                "id": 95,
+                "name": "Caixa de Transporte",
+                "category": "pet shop",
+                "price": 451.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 98,
+                "name": "Tapete Higiênico",
+                "category": "pet shop",
+                "price": 111.9,
+                "color": "marrom"
+            },
+            {
+                "id": 91,
+                "name": "Cama para Pet",
+                "category": "pet shop",
+                "price": 303.9,
+                "color": "preto"
+            },
+            {
+                "id": 94,
+                "name": "Brinquedo Mordedor",
+                "category": "pet shop",
+                "price": 414.9,
+                "color": "cinza"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Nicolas Castro",
+        "age": 40,
+        "purchases": [
+            {
+                "id": 89,
+                "name": "Instrumento Musical Infantil",
+                "category": "brinquedos",
+                "price": 229.9,
+                "color": "prata"
+            },
+            {
+                "id": 81,
+                "name": "Blocos de Montar",
+                "category": "brinquedos",
+                "price": 384.9,
+                "color": "preto"
+            },
+            {
+                "id": 83,
+                "name": "Carrinho de Controle Remoto",
+                "category": "brinquedos",
+                "price": 458.9,
+                "color": "branco"
+            },
+            {
+                "id": 85,
+                "name": "Jogo de Tabuleiro",
+                "category": "brinquedos",
+                "price": 81.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 22,
+                "name": "Moletom com Capuz",
+                "category": "vestuário",
+                "price": 456.9,
+                "color": "azul"
+            },
+            {
+                "id": 25,
+                "name": "Polo Básica",
+                "category": "vestuário",
+                "price": 116.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 18,
+                "name": "Jaqueta Corta-Vento",
+                "category": "vestuário",
+                "price": 308.9,
+                "color": "marrom"
+            },
+            {
+                "id": 21,
+                "name": "Bermuda de Sarja",
+                "category": "vestuário",
+                "price": 419.9,
+                "color": "preto"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Olívia Teixeira",
+        "age": 47,
+        "purchases": [
+            {
+                "id": 100,
+                "name": "Guia Retrátil",
+                "category": "pet shop",
+                "price": 185.9,
+                "color": "rosa"
+            },
+            {
+                "id": 92,
+                "name": "Coleira Ajustável",
+                "category": "pet shop",
+                "price": 340.9,
+                "color": "azul"
+            },
+            {
+                "id": 94,
+                "name": "Brinquedo Mordedor",
+                "category": "pet shop",
+                "price": 414.9,
+                "color": "cinza"
+            },
+            {
+                "id": 96,
+                "name": "Arranhador para Gatos",
+                "category": "pet shop",
+                "price": 488.9,
+                "color": "bege"
+            },
+            {
+                "id": 16,
+                "name": "Tablet 10 Polegadas",
+                "category": "eletrônicos",
+                "price": 234.9,
+                "color": "bege"
+            },
+            {
+                "id": 2,
+                "name": "Relógio Inteligente",
+                "category": "eletrônicos",
+                "price": 199.99,
+                "color": "prata"
+            },
+            {
+                "id": 12,
+                "name": "Mouse Gamer",
+                "category": "eletrônicos",
+                "price": 86.9,
+                "color": "azul"
+            },
+            {
+                "id": 15,
+                "name": "Webcam Full HD",
+                "category": "eletrônicos",
+                "price": 197.9,
+                "color": "vermelho"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Paulo Moreira",
+        "age": 54,
+        "purchases": [
+            {
+                "id": 1,
+                "name": "Fones de Ouvido Sem Fio",
+                "category": "eletrônicos",
+                "price": 129.99,
+                "color": "preto"
+            },
+            {
+                "id": 3,
+                "name": "Caixa de Som Bluetooth",
+                "category": "eletrônicos",
+                "price": 89.99,
+                "color": "azul"
+            },
+            {
+                "id": 12,
+                "name": "Mouse Gamer",
+                "category": "eletrônicos",
+                "price": 86.9,
+                "color": "azul"
+            },
+            {
+                "id": 14,
+                "name": "Carregador Portátil",
+                "category": "eletrônicos",
+                "price": 160.9,
+                "color": "cinza"
+            },
+            {
+                "id": 6,
+                "name": "Tênis Esportivo",
+                "category": "calçados",
+                "price": 149.99,
+                "color": "vermelho"
+            },
+            {
+                "id": 27,
+                "name": "Sapatênis Casual",
+                "category": "calçados",
+                "price": 190.9,
+                "color": "verde"
+            },
+            {
+                "id": 30,
+                "name": "Tênis de Corrida",
+                "category": "calçados",
+                "price": 301.9,
+                "color": "rosa"
+            },
+            {
+                "id": 33,
+                "name": "Papete Esportiva",
+                "category": "calçados",
+                "price": 412.9,
+                "color": "branco"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Queila Fernandes",
+        "age": 25,
+        "purchases": [
+            {
+                "id": 5,
+                "name": "Calça Jeans Slim",
+                "category": "vestuário",
+                "price": 99.99,
+                "color": "azul"
+            },
+            {
+                "id": 19,
+                "name": "Camisa Social",
+                "category": "vestuário",
+                "price": 345.9,
+                "color": "prata"
+            },
+            {
+                "id": 21,
+                "name": "Bermuda de Sarja",
+                "category": "vestuário",
+                "price": 419.9,
+                "color": "preto"
+            },
+            {
+                "id": 23,
+                "name": "Saia Plissada",
+                "category": "vestuário",
+                "price": 493.9,
+                "color": "branco"
+            },
+            {
+                "id": 43,
+                "name": "Liquidificador",
+                "category": "casa e cozinha",
+                "price": 331.9,
+                "color": "branco"
+            },
+            {
+                "id": 46,
+                "name": "Toalha de Banho",
+                "category": "casa e cozinha",
+                "price": 442.9,
+                "color": "bege"
+            },
+            {
+                "id": 49,
+                "name": "Aspirador Vertical",
+                "category": "casa e cozinha",
+                "price": 102.9,
+                "color": "prata"
+            },
+            {
+                "id": 42,
+                "name": "Jogo de Panelas",
+                "category": "casa e cozinha",
+                "price": 294.9,
+                "color": "azul"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Rafael Souza",
+        "age": 32,
+        "purchases": [
+            {
+                "id": 26,
+                "name": "Bota de Couro",
+                "category": "calçados",
+                "price": 153.9,
+                "color": "bege"
+            },
+            {
+                "id": 28,
+                "name": "Chinelo Conforto",
+                "category": "calçados",
+                "price": 227.9,
+                "color": "marrom"
+            },
+            {
+                "id": 30,
+                "name": "Tênis de Corrida",
+                "category": "calçados",
+                "price": 301.9,
+                "color": "rosa"
+            },
+            {
+                "id": 32,
+                "name": "Mocassim Clássico",
+                "category": "calçados",
+                "price": 375.9,
+                "color": "azul"
+            },
+            {
+                "id": 35,
+                "name": "Cinto Reversível",
+                "category": "acessórios",
+                "price": 486.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 38,
+                "name": "Mala de Viagem",
+                "category": "acessórios",
+                "price": 146.9,
+                "color": "marrom"
+            },
+            {
+                "id": 8,
+                "name": "Boné Estiloso",
+                "category": "acessórios",
+                "price": 39.99,
+                "color": "preto"
+            },
+            {
+                "id": 34,
+                "name": "Carteira de Couro",
+                "category": "acessórios",
+                "price": 449.9,
+                "color": "cinza"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Sabrina Cardoso",
+        "age": 39,
+        "purchases": [
+            {
+                "id": 34,
+                "name": "Carteira de Couro",
+                "category": "acessórios",
+                "price": 449.9,
+                "color": "cinza"
+            },
+            {
+                "id": 36,
+                "name": "Bolsa Transversal",
+                "category": "acessórios",
+                "price": 72.9,
+                "color": "bege"
+            },
+            {
+                "id": 38,
+                "name": "Mala de Viagem",
+                "category": "acessórios",
+                "price": 146.9,
+                "color": "marrom"
+            },
+            {
+                "id": 40,
+                "name": "Chapéu de Palha",
+                "category": "acessórios",
+                "price": 220.9,
+                "color": "rosa"
+            },
+            {
+                "id": 57,
+                "name": "Estatística Aplicada",
+                "category": "livros",
+                "price": 398.9,
+                "color": "verde"
+            },
+            {
+                "id": 60,
+                "name": "Introdução ao JavaScript",
+                "category": "livros",
+                "price": 58.9,
+                "color": "rosa"
+            },
+            {
+                "id": 53,
+                "name": "Arquitetura Limpa",
+                "category": "livros",
+                "price": 250.9,
+                "color": "branco"
+            },
+            {
+                "id": 56,
+                "name": "Python para Ciência de Dados",
+                "category": "livros",
+                "price": 361.9,
+                "color": "bege"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Thiago Pires",
+        "age": 46,
+        "purchases": [
+            {
+                "id": 45,
+                "name": "Conjunto de Potes",
+                "category": "casa e cozinha",
+                "price": 405.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 47,
+                "name": "Jogo de Cama",
+                "category": "casa e cozinha",
+                "price": 479.9,
+                "color": "verde"
+            },
+            {
+                "id": 49,
+                "name": "Aspirador Vertical",
+                "category": "casa e cozinha",
+                "price": 102.9,
+                "color": "prata"
+            },
+            {
+                "id": 41,
+                "name": "Cafeteira Elétrica",
+                "category": "casa e cozinha",
+                "price": 257.9,
+                "color": "preto"
+            },
+            {
+                "id": 79,
+                "name": "Kit de Manicure",
+                "category": "beleza e cuidados",
+                "price": 310.9,
+                "color": "prata"
+            },
+            {
+                "id": 72,
+                "name": "Aparador de Barba",
+                "category": "beleza e cuidados",
+                "price": 51.9,
+                "color": "azul"
+            },
+            {
+                "id": 75,
+                "name": "Protetor Solar Facial",
+                "category": "beleza e cuidados",
+                "price": 162.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 78,
+                "name": "Massageador Facial",
+                "category": "beleza e cuidados",
+                "price": 273.9,
+                "color": "marrom"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Úrsula Moraes",
+        "age": 53,
+        "purchases": [
+            {
+                "id": 56,
+                "name": "Python para Ciência de Dados",
+                "category": "livros",
+                "price": 361.9,
+                "color": "bege"
+            },
+            {
+                "id": 58,
+                "name": "Engenharia de Software Moderna",
+                "category": "livros",
+                "price": 435.9,
+                "color": "marrom"
+            },
+            {
+                "id": 60,
+                "name": "Introdução ao JavaScript",
+                "category": "livros",
+                "price": 58.9,
+                "color": "rosa"
+            },
+            {
+                "id": 52,
+                "name": "Redes Neurais na Prática",
+                "category": "livros",
+                "price": 213.9,
+                "color": "azul"
+            },
+            {
+                "id": 61,
+                "name": "Bola de Futebol",
+                "category": "esportes",
+                "price": 95.9,
+                "color": "preto"
+            },
+            {
+                "id": 64,
+                "name": "Garrafa Térmica Esportiva",
+                "category": "esportes",
+                "price": 206.9,
+                "color": "cinza"
+            },
+            {
+                "id": 67,
+                "name": "Luva de Boxe",
+                "category": "esportes",
+                "price": 317.9,
+                "color": "verde"
+            },
+            {
+                "id": 70,
+                "name": "Prancha de Natação",
+                "category": "esportes",
+                "price": 428.9,
+                "color": "rosa"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Vinícius Campos",
+        "age": 24,
+        "purchases": [
+            {
+                "id": 67,
+                "name": "Luva de Boxe",
+                "category": "esportes",
+                "price": 317.9,
+                "color": "verde"
+            },
+            {
+                "id": 69,
+                "name": "Capacete de Ciclismo",
+                "category": "esportes",
+                "price": 391.9,
+                "color": "prata"
+            },
+            {
+                "id": 61,
+                "name": "Bola de Futebol",
+                "category": "esportes",
+                "price": 95.9,
+                "color": "preto"
+            },
+            {
+                "id": 63,
+                "name": "Halter Emborrachado",
+                "category": "esportes",
+                "price": 169.9,
+                "color": "branco"
+            },
+            {
+                "id": 83,
+                "name": "Carrinho de Controle Remoto",
+                "category": "brinquedos",
+                "price": 458.9,
+                "color": "branco"
+            },
+            {
+                "id": 86,
+                "name": "Kit de Experimentos",
+                "category": "brinquedos",
+                "price": 118.9,
+                "color": "bege"
+            },
+            {
+                "id": 89,
+                "name": "Instrumento Musical Infantil",
+                "category": "brinquedos",
+                "price": 229.9,
+                "color": "prata"
+            },
+            {
+                "id": 82,
+                "name": "Quebra-Cabeça 1000 Peças",
+                "category": "brinquedos",
+                "price": 421.9,
+                "color": "azul"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Wesley Andrade",
+        "age": 31,
+        "purchases": [
+            {
+                "id": 78,
+                "name": "Massageador Facial",
+                "category": "beleza e cuidados",
+                "price": 273.9,
+                "color": "marrom"
+            },
+            {
+                "id": 80,
+                "name": "Espelho com LED",
+                "category": "beleza e cuidados",
+                "price": 347.9,
+                "color": "rosa"
+            },
+            {
+                "id": 72,
+                "name": "Aparador de Barba",
+                "category": "beleza e cuidados",
+                "price": 51.9,
+                "color": "azul"
+            },
+            {
+                "id": 74,
+                "name": "Perfume Floral",
+                "category": "beleza e cuidados",
+                "price": 125.9,
+                "color": "cinza"
+            },
+            {
+                "id": 12,
+                "name": "Mouse Gamer",
+                "category": "eletrônicos",
+                "price": 86.9,
+                "color": "azul"
+            },
+            {
+                "id": 15,
+                "name": "Webcam Full HD",
+                "category": "eletrônicos",
+                "price": 197.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 1,
+                "name": "Fones de Ouvido Sem Fio",
+                "category": "eletrônicos",
+                "price": 129.99,
+                "color": "preto"
+            },
+            {
+                "id": 11,
+                "name": "Teclado Mecânico",
+                "category": "eletrônicos",
+                "price": 49.9,
+                "color": "preto"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Yasmin Costa",
+        "age": 38,
+        "purchases": [
+            {
+                "id": 89,
+                "name": "Instrumento Musical Infantil",
+                "category": "brinquedos",
+                "price": 229.9,
+                "color": "prata"
+            },
+            {
+                "id": 81,
+                "name": "Blocos de Montar",
+                "category": "brinquedos",
+                "price": 384.9,
+                "color": "preto"
+            },
+            {
+                "id": 83,
+                "name": "Carrinho de Controle Remoto",
+                "category": "brinquedos",
+                "price": 458.9,
+                "color": "branco"
+            },
+            {
+                "id": 85,
+                "name": "Jogo de Tabuleiro",
+                "category": "brinquedos",
+                "price": 81.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 97,
+                "name": "Bebedouro Fonte",
+                "category": "pet shop",
+                "price": 74.9,
+                "color": "verde"
+            },
+            {
+                "id": 100,
+                "name": "Guia Retrátil",
+                "category": "pet shop",
+                "price": 185.9,
+                "color": "rosa"
+            },
+            {
+                "id": 93,
+                "name": "Comedouro Automático",
+                "category": "pet shop",
+                "price": 377.9,
+                "color": "branco"
+            },
+            {
+                "id": 96,
+                "name": "Arranhador para Gatos",
+                "category": "pet shop",
+                "price": 488.9,
+                "color": "bege"
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Zeca Oliveira",
+        "age": 45,
+        "purchases": [
+            {
+                "id": 100,
+                "name": "Guia Retrátil",
+                "category": "pet shop",
+                "price": 185.9,
+                "color": "rosa"
+            },
+            {
+                "id": 92,
+                "name": "Coleira Ajustável",
+                "category": "pet shop",
+                "price": 340.9,
+                "color": "azul"
+            },
+            {
+                "id": 94,
+                "name": "Brinquedo Mordedor",
+                "category": "pet shop",
+                "price": 414.9,
+                "color": "cinza"
+            },
+            {
+                "id": 96,
+                "name": "Arranhador para Gatos",
+                "category": "pet shop",
+                "price": 488.9,
+                "color": "bege"
+            },
+            {
+                "id": 24,
+                "name": "Blusa de Tricô",
+                "category": "vestuário",
+                "price": 79.9,
+                "color": "cinza"
+            },
+            {
+                "id": 5,
+                "name": "Calça Jeans Slim",
+                "category": "vestuário",
+                "price": 99.99,
+                "color": "azul"
+            },
+            {
+                "id": 20,
+                "name": "Vestido Midi",
+                "category": "vestuário",
+                "price": 382.9,
+                "color": "rosa"
+            },
+            {
+                "id": 23,
+                "name": "Saia Plissada",
+                "category": "vestuário",
+                "price": 493.9,
+                "color": "branco"
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Aline Duarte",
+        "age": 52,
+        "purchases": [
+            {
+                "id": 1,
+                "name": "Fones de Ouvido Sem Fio",
+                "category": "eletrônicos",
+                "price": 129.99,
+                "color": "preto"
+            },
+            {
+                "id": 3,
+                "name": "Caixa de Som Bluetooth",
+                "category": "eletrônicos",
+                "price": 89.99,
+                "color": "azul"
+            },
+            {
+                "id": 12,
+                "name": "Mouse Gamer",
+                "category": "eletrônicos",
+                "price": 86.9,
+                "color": "azul"
+            },
+            {
+                "id": 14,
+                "name": "Carregador Portátil",
+                "category": "eletrônicos",
+                "price": 160.9,
+                "color": "cinza"
+            },
+            {
+                "id": 8,
+                "name": "Boné Estiloso",
+                "category": "acessórios",
+                "price": 39.99,
+                "color": "preto"
+            },
+            {
+                "id": 34,
+                "name": "Carteira de Couro",
+                "category": "acessórios",
+                "price": 449.9,
+                "color": "cinza"
+            },
+            {
+                "id": 37,
+                "name": "Guarda-Chuva Compacto",
+                "category": "acessórios",
+                "price": 109.9,
+                "color": "verde"
+            },
+            {
+                "id": 40,
+                "name": "Chapéu de Palha",
+                "category": "acessórios",
+                "price": 220.9,
+                "color": "rosa"
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Breno Farias",
+        "age": 23,
+        "purchases": [
+            {
+                "id": 5,
+                "name": "Calça Jeans Slim",
+                "category": "vestuário",
+                "price": 99.99,
+                "color": "azul"
+            },
+            {
+                "id": 19,
+                "name": "Camisa Social",
+                "category": "vestuário",
+                "price": 345.9,
+                "color": "prata"
+            },
+            {
+                "id": 21,
+                "name": "Bermuda de Sarja",
+                "category": "vestuário",
+                "price": 419.9,
+                "color": "preto"
+            },
+            {
+                "id": 23,
+                "name": "Saia Plissada",
+                "category": "vestuário",
+                "price": 493.9,
+                "color": "branco"
+            },
+            {
+                "id": 26,
+                "name": "Bota de Couro",
+                "category": "calçados",
+                "price": 153.9,
+                "color": "bege"
+            },
+            {
+                "id": 29,
+                "name": "Sapato Social",
+                "category": "calçados",
+                "price": 264.9,
+                "color": "prata"
+            },
+            {
+                "id": 32,
+                "name": "Mocassim Clássico",
+                "category": "calçados",
+                "price": 375.9,
+                "color": "azul"
+            },
+            {
+                "id": 7,
+                "name": "Sandália Casual",
+                "category": "calçados",
+                "price": 69.99,
+                "color": "bege"
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Cecília Ramos",
+        "age": 30,
+        "purchases": [
+            {
+                "id": 26,
+                "name": "Bota de Couro",
+                "category": "calçados",
+                "price": 153.9,
+                "color": "bege"
+            },
+            {
+                "id": 28,
+                "name": "Chinelo Conforto",
+                "category": "calçados",
+                "price": 227.9,
+                "color": "marrom"
+            },
+            {
+                "id": 30,
+                "name": "Tênis de Corrida",
+                "category": "calçados",
+                "price": 301.9,
+                "color": "rosa"
+            },
+            {
+                "id": 32,
+                "name": "Mocassim Clássico",
+                "category": "calçados",
+                "price": 375.9,
+                "color": "azul"
+            },
+            {
+                "id": 45,
+                "name": "Conjunto de Potes",
+                "category": "casa e cozinha",
+                "price": 405.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 48,
+                "name": "Luminária de Mesa",
+                "category": "casa e cozinha",
+                "price": 65.9,
+                "color": "marrom"
+            },
+            {
+                "id": 41,
+                "name": "Cafeteira Elétrica",
+                "category": "casa e cozinha",
+                "price": 257.9,
+                "color": "preto"
+            },
+            {
+                "id": 44,
+                "name": "Fritadeira sem Óleo",
+                "category": "casa e cozinha",
+                "price": 368.9,
+                "color": "cinza"
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "name": "Daniel Vieira",
+        "age": 37,
+        "purchases": [
+            {
+                "id": 34,
+                "name": "Carteira de Couro",
+                "category": "acessórios",
+                "price": 449.9,
+                "color": "cinza"
+            },
+            {
+                "id": 36,
+                "name": "Bolsa Transversal",
+                "category": "acessórios",
+                "price": 72.9,
+                "color": "bege"
+            },
+            {
+                "id": 38,
+                "name": "Mala de Viagem",
+                "category": "acessórios",
+                "price": 146.9,
+                "color": "marrom"
+            },
+            {
+                "id": 40,
+                "name": "Chapéu de Palha",
+                "category": "acessórios",
+                "price": 220.9,
+                "color": "rosa"
+            },
+            {
+                "id": 67,
+                "name": "Luva de Boxe",
+                "category": "esportes",
+                "price": 317.9,
+                "color": "verde"
+            },
+            {
+                "id": 70,
+                "name": "Prancha de Natação",
+                "category": "esportes",
+                "price": 428.9,
+                "color": "rosa"
+            },
+            {
+                "id": 63,
+                "name": "Halter Emborrachado",
+                "category": "esportes",
+                "price": 169.9,
+                "color": "branco"
+            },
+            {
+                "id": 66,
+                "name": "Corda de Pular",
+                "category": "esportes",
+                "price": 280.9,
+                "color": "bege"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Elisa Monteiro",
+        "age": 44,
+        "purchases": [
+            {
+                "id": 45,
+                "name": "Conjunto de Potes",
+                "category": "casa e cozinha",
+                "price": 405.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 47,
+                "name": "Jogo de Cama",
+                "category": "casa e cozinha",
+                "price": 479.9,
+                "color": "verde"
+            },
+            {
+                "id": 49,
+                "name": "Aspirador Vertical",
+                "category": "casa e cozinha",
+                "price": 102.9,
+                "color": "prata"
+            },
+            {
+                "id": 41,
+                "name": "Cafeteira Elétrica",
+                "category": "casa e cozinha",
+                "price": 257.9,
+                "color": "preto"
+            },
+            {
+                "id": 59,
+                "name": "Aprendizado de Máquina",
+                "category": "livros",
+                "price": 472.9,
+                "color": "prata"
+            },
+            {
+                "id": 52,
+                "name": "Redes Neurais na Prática",
+                "category": "livros",
+                "price": 213.9,
+                "color": "azul"
+            },
+            {
+                "id": 55,
+                "name": "Design de Sistemas",
+                "category": "livros",
+                "price": 324.9,
+                "color": "vermelho"
+            },
+            {
+                "id": 58,
+                "name": "Engenharia de Software Moderna",
+                "category": "livros",
+                "price": 435.9,
+                "color": "marrom"
             }
         ]
     }

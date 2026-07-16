@@ -1,13 +1,18 @@
-<div class="col-md-3">
-    <div class="card product-card">
-        <div class="card-body">
-            <h5 class="card-title">{{name}}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{category}}</h6>
-            <p class="card-text">
-                <strong>Price:</strong> ${{price}}<br>
-                <strong>Color:</strong> {{color}}<br>
-            </p>
-            <button class="btn btn-primary buy-now-btn" data-product='{{product}}'>Buy Now</button>
+<article class="product-card">
+    <div class="product-card-top">
+        <span class="product-category"><i class="bi bi-tag"></i> {{category}}</span>
+        <span class="color-chip"><span class="color-dot"></span>{{color}}</span>
+    </div>
+    {{recommendationBadge}}
+    <div class="product-visual" aria-hidden="true"><i class="bi bi-bag"></i></div>
+    <div class="product-content">
+        <h3>{{name}}</h3>
+        <p class="product-id">Produto #{{id}}</p>
+        <div class="product-footer">
+            <div class="product-price"><small>Preço</small><strong>R$ {{price}}</strong></div>
+            <button class="btn btn-primary buy-now-btn" data-product='{{product}}' aria-label="Adicionar {{name}} às compras">
+                <i class="bi bi-plus-lg"></i><span>Comprar</span>
+            </button>
         </div>
     </div>
-</div>
+</article>

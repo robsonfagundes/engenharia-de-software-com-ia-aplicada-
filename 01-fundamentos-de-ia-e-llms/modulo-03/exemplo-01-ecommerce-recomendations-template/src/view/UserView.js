@@ -1,5 +1,6 @@
 import { View } from './View.js';
 
+/** Cuida da seleção, detalhes e histórico visual de clientes. */
 export class UserView extends View {
     #userSelect = document.querySelector('#userSelect');
     #userAge = document.querySelector('#userAge');
@@ -10,24 +11,29 @@ export class UserView extends View {
     #onPurchaseRemove;
     #pastPurchaseElements = [];
 
+    /** Inicia o carregamento assíncrono do template de compra. */
     constructor() {
         super();
         this.init();
     }
 
+    /** Carrega o template e conecta o seletor de clientes. */
     async init() {
         this.#purchaseTemplate = await this.loadTemplate('./src/view/templates/past-purchase.html');
         this.attachUserSelectListener();
     }
 
+    /** Registra o callback executado ao selecionar um cliente. */
     registerUserSelectCallback(callback) {
         this.#onUserSelect = callback;
     }
 
+    /** Registra o callback executado ao remover uma compra. */
     registerPurchaseRemoveCallback(callback) {
         this.#onPurchaseRemove = callback;
     }
 
+    /** Constrói as opções do seletor a partir dos clientes recebidos. */
     renderUserOptions(users) {
         const options = users.map(user => {
             return `<option value="${user.id}">${user.name}</option>`;
@@ -36,21 +42,24 @@ export class UserView extends View {
         this.#userSelect.innerHTML += options;
     }
 
+    /** Exibe os dados básicos do cliente selecionado. */
     renderUserDetails(user) {
         this.#userAge.value = user.age;
     }
 
+    /** Renderiza o histórico ou uma mensagem para cliente sem compras. */
     renderPastPurchases(pastPurchases) {
         if (!this.#purchaseTemplate) return;
 
         if (!pastPurchases || pastPurchases.length === 0) {
-            this.#pastPurchasesList.innerHTML = '<p>No past purchases found.</p>';
+            this.#pastPurchasesList.innerHTML = '<div class="empty-state compact"><i class="bi bi-bag-x"></i><span>Este usuário ainda não possui compras.</span></div>';
             return;
         }
 
         const html = pastPurchases.map(product => {
             return this.replaceTemplate(this.#purchaseTemplate, {
                 ...product,
+                price: Number(product.price).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
                 product: JSON.stringify(product)
             });
         }).join('');
@@ -59,20 +68,22 @@ export class UserView extends View {
         this.attachPurchaseClickHandlers();
     }
 
+    /** Insere uma compra no topo e aplica um destaque temporário. */
     addPastPurchase(product) {
 
-        if (this.#pastPurchasesList.innerHTML.includes('No past purchases found')) {
+        if (this.#pastPurchasesList.querySelector('.empty-state')) {
             this.#pastPurchasesList.innerHTML = '';
         }
 
         const purchaseHtml = this.replaceTemplate(this.#purchaseTemplate, {
             ...product,
+            price: Number(product.price).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
             product: JSON.stringify(product)
         });
 
         this.#pastPurchasesList.insertAdjacentHTML('afterbegin', purchaseHtml);
 
-        const newPurchase = this.#pastPurchasesList.firstElementChild.querySelector('.past-purchase');
+        const newPurchase = this.#pastPurchasesList.firstElementChild;
         newPurchase.classList.add('past-purchase-highlight');
 
         setTimeout(() => {
@@ -82,6 +93,7 @@ export class UserView extends View {
         this.attachPurchaseClickHandlers();
     }
 
+    /** Publica a troca de cliente e limpa os detalhes sem uma seleção. */
     attachUserSelectListener() {
         this.#userSelect.addEventListener('change', (event) => {
             const userId = event.target.value ? Number(event.target.value) : null;
@@ -92,11 +104,12 @@ export class UserView extends View {
                 }
             } else {
                 this.#userAge.value = '';
-                this.#pastPurchasesList.innerHTML = '';
+                this.#pastPurchasesList.innerHTML = '<div class="empty-state compact"><i class="bi bi-person-check"></i><span>Selecione um usuário para ver o histórico.</span></div>';
             }
         });
     }
 
+    /** Conecta cada compra à remoção visual e persistente. */
     attachPurchaseClickHandlers() {
         this.#pastPurchaseElements = [];
 
@@ -109,7 +122,7 @@ export class UserView extends View {
 
                 const product = JSON.parse(purchaseElement.dataset.product);
                 const userId = this.getSelectedUserId();
-                const element = purchaseElement.closest('.col-md-6');
+                const element = purchaseElement;
 
                 this.#onPurchaseRemove({ element, userId, product });
 
@@ -129,6 +142,7 @@ export class UserView extends View {
         });
     }
 
+    /** Retorna o id numérico selecionado ou null. */
     getSelectedUserId() {
         return this.#userSelect.value ? Number(this.#userSelect.value) : null;
     }

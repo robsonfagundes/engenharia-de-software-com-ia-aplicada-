@@ -5,7 +5,9 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "start": "browser-sync -w . --server --files 'index.html, data/*.json, js/*.js' --port 3000",
+        "start": "node --watch server.js",
+        "start:prod": "node server.js",
+        "db:create-vector-index": "node scripts/create-vector-index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
@@ -16,6 +18,11 @@
     ],
     "author": "",
     "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.6.1",
+        "express": "^5.1.0",
+        "mongodb": "^6.17.0"
+    },
     "devDependencies": {
         "browser-sync": "^3.0.4"
     }

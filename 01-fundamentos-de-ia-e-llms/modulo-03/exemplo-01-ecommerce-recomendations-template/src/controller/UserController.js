@@ -1,7 +1,9 @@
+/** Gerencia seleção de clientes e mudanças em seus históricos de compras. */
 export class UserController {
     #userService;
     #userView;
     #events;
+    /** Constrói o controller com dependências explícitas e testáveis. */
     constructor({
         userView,
         userService,
@@ -12,14 +14,19 @@ export class UserController {
         this.#events = events;
     }
 
+    /** Fábrica de inicialização utilizada no ponto de entrada. */
     static init(deps) {
         return new UserController(deps);
     }
 
+    /**
+     * Carrega clientes, cadastra o usuário de cold start e prepara a interface.
+     * Ao final, notifica o treinamento sobre a lista mais recente.
+     */
     async renderUsers(nonTrainedUser) {
         const users = await this.#userService.getDefaultUsers();
 
-        this.#userService.addUser(nonTrainedUser);
+        await this.#userService.addUser(nonTrainedUser);
         const defaultAndNonTrained = [nonTrainedUser, ...users];
 
         this.#userView.renderUserOptions(defaultAndNonTrained);
@@ -30,11 +37,13 @@ export class UserController {
 
     }
 
+    /** Conecta as ações visuais aos métodos do controller. */
     setupCallbacks() {
         this.#userView.registerUserSelectCallback(this.handleUserSelect.bind(this));
         this.#userView.registerPurchaseRemoveCallback(this.handlePurchaseRemove.bind(this));
     }
 
+    /** Observa compras publicadas pelo ProductController. */
     setupPurchaseObserver() {
 
         this.#events.onPurchaseAdded(
@@ -45,12 +54,14 @@ export class UserController {
 
     }
 
+    /** Carrega o cliente selecionado e publica sua seleção para os demais módulos. */
     async handleUserSelect(userId) {
         const user = await this.#userService.getUserById(userId);
         this.#events.dispatchUserSelected(user);
         return this.displayUserDetails(user);
     }
 
+    /** Adiciona a compra, persiste o cliente e solicita novo treinamento. */
     async handlePurchaseAdded({ user, product }) {
         const updatedUser = await this.#userService.getUserById(user.id);
         updatedUser.purchases.push({
@@ -64,6 +75,7 @@ export class UserController {
         this.#events.dispatchUsersUpdated({ users: await this.#userService.getUsers() });
     }
 
+    /** Remove uma ocorrência do produto comprado e persiste a alteração. */
     async handlePurchaseRemove({ userId, product }) {
         const user = await this.#userService.getUserById(userId);
         const index = user.purchases.findIndex(item => item.id === product.id);
@@ -78,12 +90,14 @@ export class UserController {
     }
 
 
+    /** Atualiza idade e histórico apresentados na área do cliente. */
     async displayUserDetails(user) {
         this.#userView.renderUserDetails(user);
         this.#userView.renderPastPurchases(user.purchases);
 
     }
 
+    /** Expõe o id atualmente selecionado pela view. */
     getSelectedUserId() {
         return this.#userView.getSelectedUserId();
     }

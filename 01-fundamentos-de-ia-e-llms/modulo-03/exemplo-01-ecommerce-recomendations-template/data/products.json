@@ -68,5 +68,635 @@
         "category": "acessórios",
         "price": 89.99,
         "color": "marrom"
+    },
+    {
+        "id": 11,
+        "name": "Teclado Mecânico",
+        "category": "eletrônicos",
+        "price": 49.9,
+        "color": "preto"
+    },
+    {
+        "id": 12,
+        "name": "Mouse Gamer",
+        "category": "eletrônicos",
+        "price": 86.9,
+        "color": "azul"
+    },
+    {
+        "id": 13,
+        "name": "Monitor LED 24 Polegadas",
+        "category": "eletrônicos",
+        "price": 123.9,
+        "color": "branco"
+    },
+    {
+        "id": 14,
+        "name": "Carregador Portátil",
+        "category": "eletrônicos",
+        "price": 160.9,
+        "color": "cinza"
+    },
+    {
+        "id": 15,
+        "name": "Webcam Full HD",
+        "category": "eletrônicos",
+        "price": 197.9,
+        "color": "vermelho"
+    },
+    {
+        "id": 16,
+        "name": "Tablet 10 Polegadas",
+        "category": "eletrônicos",
+        "price": 234.9,
+        "color": "bege"
+    },
+    {
+        "id": 17,
+        "name": "Leitor Digital",
+        "category": "eletrônicos",
+        "price": 271.9,
+        "color": "verde"
+    },
+    {
+        "id": 18,
+        "name": "Jaqueta Corta-Vento",
+        "category": "vestuário",
+        "price": 308.9,
+        "color": "marrom"
+    },
+    {
+        "id": 19,
+        "name": "Camisa Social",
+        "category": "vestuário",
+        "price": 345.9,
+        "color": "prata"
+    },
+    {
+        "id": 20,
+        "name": "Vestido Midi",
+        "category": "vestuário",
+        "price": 382.9,
+        "color": "rosa"
+    },
+    {
+        "id": 21,
+        "name": "Bermuda de Sarja",
+        "category": "vestuário",
+        "price": 419.9,
+        "color": "preto"
+    },
+    {
+        "id": 22,
+        "name": "Moletom com Capuz",
+        "category": "vestuário",
+        "price": 456.9,
+        "color": "azul"
+    },
+    {
+        "id": 23,
+        "name": "Saia Plissada",
+        "category": "vestuário",
+        "price": 493.9,
+        "color": "branco"
+    },
+    {
+        "id": 24,
+        "name": "Blusa de Tricô",
+        "category": "vestuário",
+        "price": 79.9,
+        "color": "cinza"
+    },
+    {
+        "id": 25,
+        "name": "Polo Básica",
+        "category": "vestuário",
+        "price": 116.9,
+        "color": "vermelho"
+    },
+    {
+        "id": 26,
+        "name": "Bota de Couro",
+        "category": "calçados",
+        "price": 153.9,
+        "color": "bege"
+    },
+    {
+        "id": 27,
+        "name": "Sapatênis Casual",
+        "category": "calçados",
+        "price": 190.9,
+        "color": "verde"
+    },
+    {
+        "id": 28,
+        "name": "Chinelo Conforto",
+        "category": "calçados",
+        "price": 227.9,
+        "color": "marrom"
+    },
+    {
+        "id": 29,
+        "name": "Sapato Social",
+        "category": "calçados",
+        "price": 264.9,
+        "color": "prata"
+    },
+    {
+        "id": 30,
+        "name": "Tênis de Corrida",
+        "category": "calçados",
+        "price": 301.9,
+        "color": "rosa"
+    },
+    {
+        "id": 31,
+        "name": "Sapatilha Feminina",
+        "category": "calçados",
+        "price": 338.9,
+        "color": "preto"
+    },
+    {
+        "id": 32,
+        "name": "Mocassim Clássico",
+        "category": "calçados",
+        "price": 375.9,
+        "color": "azul"
+    },
+    {
+        "id": 33,
+        "name": "Papete Esportiva",
+        "category": "calçados",
+        "price": 412.9,
+        "color": "branco"
+    },
+    {
+        "id": 34,
+        "name": "Carteira de Couro",
+        "category": "acessórios",
+        "price": 449.9,
+        "color": "cinza"
+    },
+    {
+        "id": 35,
+        "name": "Cinto Reversível",
+        "category": "acessórios",
+        "price": 486.9,
+        "color": "vermelho"
+    },
+    {
+        "id": 36,
+        "name": "Bolsa Transversal",
+        "category": "acessórios",
+        "price": 72.9,
+        "color": "bege"
+    },
+    {
+        "id": 37,
+        "name": "Guarda-Chuva Compacto",
+        "category": "acessórios",
+        "price": 109.9,
+        "color": "verde"
+    },
+    {
+        "id": 38,
+        "name": "Mala de Viagem",
+        "category": "acessórios",
+        "price": 146.9,
+        "color": "marrom"
+    },
+    {
+        "id": 39,
+        "name": "Pulseira de Aço",
+        "category": "acessórios",
+        "price": 183.9,
+        "color": "prata"
+    },
+    {
+        "id": 40,
+        "name": "Chapéu de Palha",
+        "category": "acessórios",
+        "price": 220.9,
+        "color": "rosa"
+    },
+    {
+        "id": 41,
+        "name": "Cafeteira Elétrica",
+        "category": "casa e cozinha",
+        "price": 257.9,
+        "color": "preto"
+    },
+    {
+        "id": 42,
+        "name": "Jogo de Panelas",
+        "category": "casa e cozinha",
+        "price": 294.9,
+        "color": "azul"
+    },
+    {
+        "id": 43,
+        "name": "Liquidificador",
+        "category": "casa e cozinha",
+        "price": 331.9,
+        "color": "branco"
+    },
+    {
+        "id": 44,
+        "name": "Fritadeira sem Óleo",
+        "category": "casa e cozinha",
+        "price": 368.9,
+        "color": "cinza"
+    },
+    {
+        "id": 45,
+        "name": "Conjunto de Potes",
+        "category": "casa e cozinha",
+        "price": 405.9,
+        "color": "vermelho"
+    },
+    {
+        "id": 46,
+        "name": "Toalha de Banho",
+        "category": "casa e cozinha",
+        "price": 442.9,
+        "color": "bege"
+    },
+    {
+        "id": 47,
+        "name": "Jogo de Cama",
+        "category": "casa e cozinha",
+        "price": 479.9,
+        "color": "verde"
+    },
+    {
+        "id": 48,
+        "name": "Luminária de Mesa",
+        "category": "casa e cozinha",
+        "price": 65.9,
+        "color": "marrom"
+    },
+    {
+        "id": 49,
+        "name": "Aspirador Vertical",
+        "category": "casa e cozinha",
+        "price": 102.9,
+        "color": "prata"
+    },
+    {
+        "id": 50,
+        "name": "Balança Digital de Cozinha",
+        "category": "casa e cozinha",
+        "price": 139.9,
+        "color": "rosa"
+    },
+    {
+        "id": 51,
+        "name": "Fundamentos de Inteligência Artificial",
+        "category": "livros",
+        "price": 176.9,
+        "color": "preto"
+    },
+    {
+        "id": 52,
+        "name": "Redes Neurais na Prática",
+        "category": "livros",
+        "price": 213.9,
+        "color": "azul"
+    },
+    {
+        "id": 53,
+        "name": "Arquitetura Limpa",
+        "category": "livros",
+        "price": 250.9,
+        "color": "branco"
+    },
+    {
+        "id": 54,
+        "name": "Algoritmos e Estruturas de Dados",
+        "category": "livros",
+        "price": 287.9,
+        "color": "cinza"
+    },
+    {
+        "id": 55,
+        "name": "Design de Sistemas",
+        "category": "livros",
+        "price": 324.9,
+        "color": "vermelho"
+    },
+    {
+        "id": 56,
+        "name": "Python para Ciência de Dados",
+        "category": "livros",
+        "price": 361.9,
+        "color": "bege"
+    },
+    {
+        "id": 57,
+        "name": "Estatística Aplicada",
+        "category": "livros",
+        "price": 398.9,
+        "color": "verde"
+    },
+    {
+        "id": 58,
+        "name": "Engenharia de Software Moderna",
+        "category": "livros",
+        "price": 435.9,
+        "color": "marrom"
+    },
+    {
+        "id": 59,
+        "name": "Aprendizado de Máquina",
+        "category": "livros",
+        "price": 472.9,
+        "color": "prata"
+    },
+    {
+        "id": 60,
+        "name": "Introdução ao JavaScript",
+        "category": "livros",
+        "price": 58.9,
+        "color": "rosa"
+    },
+    {
+        "id": 61,
+        "name": "Bola de Futebol",
+        "category": "esportes",
+        "price": 95.9,
+        "color": "preto"
+    },
+    {
+        "id": 62,
+        "name": "Colchonete de Yoga",
+        "category": "esportes",
+        "price": 132.9,
+        "color": "azul"
+    },
+    {
+        "id": 63,
+        "name": "Halter Emborrachado",
+        "category": "esportes",
+        "price": 169.9,
+        "color": "branco"
+    },
+    {
+        "id": 64,
+        "name": "Garrafa Térmica Esportiva",
+        "category": "esportes",
+        "price": 206.9,
+        "color": "cinza"
+    },
+    {
+        "id": 65,
+        "name": "Raquete de Tênis",
+        "category": "esportes",
+        "price": 243.9,
+        "color": "vermelho"
+    },
+    {
+        "id": 66,
+        "name": "Corda de Pular",
+        "category": "esportes",
+        "price": 280.9,
+        "color": "bege"
+    },
+    {
+        "id": 67,
+        "name": "Luva de Boxe",
+        "category": "esportes",
+        "price": 317.9,
+        "color": "verde"
+    },
+    {
+        "id": 68,
+        "name": "Kit de Faixas Elásticas",
+        "category": "esportes",
+        "price": 354.9,
+        "color": "marrom"
+    },
+    {
+        "id": 69,
+        "name": "Capacete de Ciclismo",
+        "category": "esportes",
+        "price": 391.9,
+        "color": "prata"
+    },
+    {
+        "id": 70,
+        "name": "Prancha de Natação",
+        "category": "esportes",
+        "price": 428.9,
+        "color": "rosa"
+    },
+    {
+        "id": 71,
+        "name": "Secador de Cabelo",
+        "category": "beleza e cuidados",
+        "price": 465.9,
+        "color": "preto"
+    },
+    {
+        "id": 72,
+        "name": "Aparador de Barba",
+        "category": "beleza e cuidados",
+        "price": 51.9,
+        "color": "azul"
+    },
+    {
+        "id": 73,
+        "name": "Kit de Pincéis de Maquiagem",
+        "category": "beleza e cuidados",
+        "price": 88.9,
+        "color": "branco"
+    },
+    {
+        "id": 74,
+        "name": "Perfume Floral",
+        "category": "beleza e cuidados",
+        "price": 125.9,
+        "color": "cinza"
+    },
+    {
+        "id": 75,
+        "name": "Protetor Solar Facial",
+        "category": "beleza e cuidados",
+        "price": 162.9,
+        "color": "vermelho"
+    },
+    {
+        "id": 76,
+        "name": "Escova Alisadora",
+        "category": "beleza e cuidados",
+        "price": 199.9,
+        "color": "bege"
+    },
+    {
+        "id": 77,
+        "name": "Hidratante Corporal",
+        "category": "beleza e cuidados",
+        "price": 236.9,
+        "color": "verde"
+    },
+    {
+        "id": 78,
+        "name": "Massageador Facial",
+        "category": "beleza e cuidados",
+        "price": 273.9,
+        "color": "marrom"
+    },
+    {
+        "id": 79,
+        "name": "Kit de Manicure",
+        "category": "beleza e cuidados",
+        "price": 310.9,
+        "color": "prata"
+    },
+    {
+        "id": 80,
+        "name": "Espelho com LED",
+        "category": "beleza e cuidados",
+        "price": 347.9,
+        "color": "rosa"
+    },
+    {
+        "id": 81,
+        "name": "Blocos de Montar",
+        "category": "brinquedos",
+        "price": 384.9,
+        "color": "preto"
+    },
+    {
+        "id": 82,
+        "name": "Quebra-Cabeça 1000 Peças",
+        "category": "brinquedos",
+        "price": 421.9,
+        "color": "azul"
+    },
+    {
+        "id": 83,
+        "name": "Carrinho de Controle Remoto",
+        "category": "brinquedos",
+        "price": 458.9,
+        "color": "branco"
+    },
+    {
+        "id": 84,
+        "name": "Boneca Articulada",
+        "category": "brinquedos",
+        "price": 495.9,
+        "color": "cinza"
+    },
+    {
+        "id": 85,
+        "name": "Jogo de Tabuleiro",
+        "category": "brinquedos",
+        "price": 81.9,
+        "color": "vermelho"
+    },
+    {
+        "id": 86,
+        "name": "Kit de Experimentos",
+        "category": "brinquedos",
+        "price": 118.9,
+        "color": "bege"
+    },
+    {
+        "id": 87,
+        "name": "Pelúcia de Urso",
+        "category": "brinquedos",
+        "price": 155.9,
+        "color": "verde"
+    },
+    {
+        "id": 88,
+        "name": "Pista de Corrida",
+        "category": "brinquedos",
+        "price": 192.9,
+        "color": "marrom"
+    },
+    {
+        "id": 89,
+        "name": "Instrumento Musical Infantil",
+        "category": "brinquedos",
+        "price": 229.9,
+        "color": "prata"
+    },
+    {
+        "id": 90,
+        "name": "Massinha de Modelar",
+        "category": "brinquedos",
+        "price": 266.9,
+        "color": "rosa"
+    },
+    {
+        "id": 91,
+        "name": "Cama para Pet",
+        "category": "pet shop",
+        "price": 303.9,
+        "color": "preto"
+    },
+    {
+        "id": 92,
+        "name": "Coleira Ajustável",
+        "category": "pet shop",
+        "price": 340.9,
+        "color": "azul"
+    },
+    {
+        "id": 93,
+        "name": "Comedouro Automático",
+        "category": "pet shop",
+        "price": 377.9,
+        "color": "branco"
+    },
+    {
+        "id": 94,
+        "name": "Brinquedo Mordedor",
+        "category": "pet shop",
+        "price": 414.9,
+        "color": "cinza"
+    },
+    {
+        "id": 95,
+        "name": "Caixa de Transporte",
+        "category": "pet shop",
+        "price": 451.9,
+        "color": "vermelho"
+    },
+    {
+        "id": 96,
+        "name": "Arranhador para Gatos",
+        "category": "pet shop",
+        "price": 488.9,
+        "color": "bege"
+    },
+    {
+        "id": 97,
+        "name": "Bebedouro Fonte",
+        "category": "pet shop",
+        "price": 74.9,
+        "color": "verde"
+    },
+    {
+        "id": 98,
+        "name": "Tapete Higiênico",
+        "category": "pet shop",
+        "price": 111.9,
+        "color": "marrom"
+    },
+    {
+        "id": 99,
+        "name": "Escova Removedora de Pelos",
+        "category": "pet shop",
+        "price": 148.9,
+        "color": "prata"
+    },
+    {
+        "id": 100,
+        "name": "Guia Retrátil",
+        "category": "pet shop",
+        "price": 185.9,
+        "color": "rosa"
     }
 ]

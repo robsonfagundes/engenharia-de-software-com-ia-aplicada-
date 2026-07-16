@@ -1,46 +1,47 @@
+/**
+ * Encapsula a comunicação com a API de clientes. A persistência que antes
+ * usava sessionStorage agora é feita no MongoDB pelo servidor Node.js.
+ */
 export class UserService {
-    #storageKey = 'ew-academy-users';
-
+    /** Mantém compatibilidade com o fluxo original e retorna os clientes salvos. */
     async getDefaultUsers() {
-        const response = await fetch('./data/users.json');
-        const users = await response.json();
-        this.#setStorage(users);
-
-        return users;
+        return this.getUsers();
     }
 
+    /** Lista clientes e históricos de compras. */
     async getUsers() {
-        const users = this.#getStorage();
-        return users;
+        const response = await fetch('/api/users');
+        if (!response.ok) throw new Error('Não foi possível carregar os clientes');
+        return response.json();
     }
 
+    /** Busca um cliente usando seu identificador numérico. */
     async getUserById(userId) {
-        const users = this.#getStorage();
-        return users.find(user => user.id === userId);
+        const response = await fetch(`/api/users/${userId}`);
+        if (!response.ok) throw new Error('Cliente não encontrado');
+        return response.json();
     }
 
+    /** Atualiza os dados e as compras de um cliente existente. */
     async updateUser(user) {
-        const users = this.#getStorage();
-        const userIndex = users.findIndex(u => u.id === user.id);
-
-        users[userIndex] = { ...users[userIndex], ...user };
-        this.#setStorage(users);
-
-        return users[userIndex];
+        const response = await fetch(`/api/users/${user.id}`, {
+            method: 'PUT',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(user),
+        });
+        if (!response.ok) throw new Error('Não foi possível atualizar o cliente');
+        return response.json();
     }
 
+    /** Insere um cliente novo; a API também protege contra ids duplicados. */
     async addUser(user) {
-        const users = this.#getStorage();
-        this.#setStorage([user, ...users]);
-    }
-
-    #getStorage() {
-        const data = sessionStorage.getItem(this.#storageKey);
-        return data ? JSON.parse(data) : [];
-    }
-
-    #setStorage(data) {
-        sessionStorage.setItem(this.#storageKey, JSON.stringify(data));
+        const response = await fetch('/api/users', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(user),
+        });
+        if (!response.ok) throw new Error('Não foi possível adicionar o cliente');
+        return response.json();
     }
 
 

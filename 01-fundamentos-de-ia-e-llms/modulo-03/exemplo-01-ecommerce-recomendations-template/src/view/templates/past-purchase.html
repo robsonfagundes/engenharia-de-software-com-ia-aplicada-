@@ -1,6 +1,5 @@
-<div class="col-md-6 mb-2">
-    <div class="past-purchase" data-product='{{product}}'>
-        <strong>{{name}}</strong> - Price {{price}} - Color {{color}}
-        <i class="bi bi-x-circle text-danger float-end" title="Remove purchase"></i>
-    </div>
-</div>
+<button class="past-purchase" type="button" data-product='{{product}}' aria-label="Remover {{name}} do histórico">
+    <span class="purchase-icon"><i class="bi bi-bag-check"></i></span>
+    <span class="purchase-info"><strong>{{name}}</strong><small>{{category}} · R$ {{price}}</small></span>
+    <i class="bi bi-x-lg remove-icon" aria-hidden="true"></i>
+</button>

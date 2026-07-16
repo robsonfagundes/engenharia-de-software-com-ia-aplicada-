@@ -1,5 +1,6 @@
 import { View } from './View.js';
 
+/** Mantém e desenha as séries históricas exibidas pelo TensorFlow Visor. */
 export class TFVisorView extends View {
     #weights = null;
     #catalog = [];
@@ -7,18 +8,46 @@ export class TFVisorView extends View {
     #logs = [];
     #lossPoints = [];
     #accPoints = [];
+    #showVisorButton = null;
+    /** Abre o painel lateral de métricas ao criar a view. */
     constructor() {
         super();
 
-        tfvis.visor().open();
+        const visor = tfvis.visor();
+        this.#showVisorButton = document.querySelector('#showTfVisorBtn');
+
+        visor.open();
+        this.#syncShowButton();
+
+        this.#showVisorButton?.addEventListener('click', () => {
+            visor.open();
+            this.#syncShowButton();
+        });
+
+        // O Visor controla internamente o botão "Hide" e o atalho de teclado.
+        // Sincroniza o nosso botão logo depois de qualquer uma dessas ações.
+        document.addEventListener('click', () => {
+            requestAnimationFrame(() => this.#syncShowButton());
+        });
+        document.addEventListener('keydown', () => {
+            requestAnimationFrame(() => this.#syncShowButton());
+        });
     }
 
+    #syncShowButton() {
+        if (this.#showVisorButton) {
+            this.#showVisorButton.hidden = tfvis.visor().isOpen();
+        }
+    }
+
+    /** Armazena metadados adicionais caso o worker os publique. */
     renderData(data) {
 
         this.#weights = data.weights;
         this.#catalog = data.catalog;
         this.#users = data.users;
     }
+    /** Limpa séries antigas antes de um novo treinamento. */
     resetDashboard() {
         this.#weights = null;
         this.#catalog = [];
@@ -28,6 +57,7 @@ export class TFVisorView extends View {
         this.#accPoints = [];
     }
 
+    /** Acrescenta loss/accuracy da época e redesenha os dois gráficos. */
     handleTrainingLog(log) {
         const { epoch, loss, accuracy } = log;
         this.#lossPoints.push({ x: epoch, y: loss });
