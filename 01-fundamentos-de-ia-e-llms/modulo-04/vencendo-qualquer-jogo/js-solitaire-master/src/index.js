@@ -1,5 +1,6 @@
 import spriteImg from './sprite';
 import './index.scss';
+import { initAutomation } from './machine-learning/controller';
 
 const gameEl = document.getElementById('js-solitaire');
 const dealPileEl = document.getElementById('js-deck-pile');
@@ -12,14 +13,14 @@ const resetEl = document.getElementById('js-reset');
 const cardWidth = 71;
 const cardHeight = 96;
 const state = {
-    // clubs (♣), diamonds (♦), hearts (♥) and spades (♠)
+    // Paus (♣), ouros (♦), copas (♥) e espadas (♠).
     types: ['c', 'd', 'h', 's'],
-    // 0 (black), 1 (red)
+    // 0 representa preto; 1 representa vermelho.
     colors: {'c': 0, 'd': 1, 'h': 1, 's': 0},
     cards: [
         // { el: null, type: 's', number: 0, facingUp: false }, {...}
     ],
-    // dealer deck
+    // Monte de compra e descarte.
     deal: {
         pile: {
             el: null,
@@ -30,17 +31,17 @@ const state = {
             cards: [/* 0, 1, ... */]
         },
     },
-    // finish deck
+    // Quatro fundações da parte superior.
     finish: [
         // { el: null, cards: [ 0, 1, ... ] }, {...}
     ],
-    // playing desk
+    // Sete colunas do tabuleiro.
     desk: [
         // { el: null, cards: [ 0, 1, ... ]}, {...}
     ],
-    // move target
+    // Destino atual de uma movimentação.
     target: null,
-    // moving
+    // Estado temporário usado durante o arraste.
     moving: {
         card: {},
         element: null,
@@ -171,12 +172,12 @@ const moveCardTo = (dest, i, card) => {
         (elem, i, array) => array.indexOf(elem) >= index
     );
 
-    // remove from source
+    // Remove as cartas da origem.
     state[location][pile].cards = state[location][pile].cards.filter(
         (elem, i, array) => moving.indexOf(elem) === -1
     );
 
-    // append to destination
+    // Adiciona as cartas ao destino.
     state[dest][i].cards = state[dest][i].cards.concat(moving);
 
     // console.log(state);
@@ -228,7 +229,7 @@ function dealCards() {
 }
 
 function resetGame() {
-    // clear decks
+    // Limpa todas as pilhas.
     for (let i = 0; i < 7; i++) {
         state.desk[i].cards = [];
     }
@@ -238,10 +239,10 @@ function resetGame() {
     state.deal.pile.cards = [];
     state.deal.deal.cards = [];
 
-    // randomise cards
+    // Embaralha as cartas.
     state.cards.sort(() => (Math.random() < .5) ? -1 : 1);
 
-    // re-assign indexes
+    // Reatribui eventos e índices depois do embaralhamento.
     requestAnimationFrame(() => {
         for (let i = 0, l = state.cards.length; i < l; i++) {
             const { facingUp, el } = state.cards[i];
@@ -293,7 +294,7 @@ const handleClick = index => event => {
 
             moveCardTo(destTarget, pileTarget, cardTarget);
 
-            // face up last cards on desk
+            // Vira para cima a nova carta do topo da coluna.
             if (location === 'desk') {
                 faceUpLastOnDesk(pile);
             }
@@ -303,7 +304,7 @@ const handleClick = index => event => {
         }
         gameFinish();
     } else {
-        // is on deal deck
+        // A carta está no monte de compra.
         const { location, pile } = getCardLocation(index);
         if (location === 'deal' && pile === 'pile') {
             const max = state.deal.pile.cards.length - 1;
@@ -420,10 +421,10 @@ const dropCard = (x, y) => {
 
             destination.el.appendChild(state.moving.element);
 
-            // check game finish
+            // Verifica se todas as cartas chegaram às fundações.
             gameFinish();
 
-            // face up last on desk
+            // Vira a nova carta do topo da coluna de origem.
             const {
                 location: originLocation,
                 pile: originPile
@@ -460,8 +461,8 @@ const releaseMove = event => {
 const getAvailableDestinations = (index, first = false) => {
     const { type, number } = getCard(index);
     const destinations = [];
-    if (number === 1) { // aces
-        // finish pile
+    if (number === 1) { // Ases.
+        // Um ás pode iniciar qualquer fundação vazia.
         for (let i = 0; i < 4; i++) {
             const { cards, el} = getPile('finish', i);
             if (cards.length === 0) {
@@ -478,8 +479,7 @@ const getAvailableDestinations = (index, first = false) => {
             }
         }
     }
-    // other cards
-    // move to finish pile
+    // Demais cartas: tenta primeiro mover para uma fundação.
     const subCards = getSubCards(index);
     if (!subCards.length > 0) {
         for (let i = 0; i < 4; i++) {
@@ -504,7 +504,7 @@ const getAvailableDestinations = (index, first = false) => {
             }
         }
     }
-    // desk pile
+    // Em seguida, procura um destino nas sete colunas.
     for (let i = 0; i < 7; i++) {
         const last = getLastOnDesk(i);
         if (last !== null) {
@@ -519,8 +519,8 @@ const getAvailableDestinations = (index, first = false) => {
                 });
                 if (first) return destinations;
             }
-        } else { // empty desk, accepts only kings
-            if (number === 13) { // kings
+        } else { // Uma coluna vazia aceita somente reis.
+            if (number === 13) { // Reis.
                 destinations.push({
                     el: state.desk[i].el,
                     target: {
@@ -538,7 +538,7 @@ const getAvailableDestinations = (index, first = false) => {
 
 
 const gameFinish = () => {
-    // game finish check
+    // A vitória acontece quando cada fundação contém 13 cartas.
     for (let i = 3; i >= 0; i--) {
         const l = state.finish[i].cards.length;
         if (l < 13) return;
@@ -585,21 +585,21 @@ const win = (canvasWidth, canvasHeight, canvasLeft, canvasTop) => {
         const spriteX = ( id % 4 ) * cardWidth;
         const spriteY = Math.floor(id / 4) * cardHeight;
 
-        // initial position of the card
+        // Desenha a posição inicial da carta na animação.
         drawCard(x, y, spriteX, spriteY);
 
         this.update = () => {
             x += sx;
             y += sy;
 
-            // is particle out of canvas
+            // Remove a partícula quando ela sai do canvas.
             if (x < -cardWidth || x > (canvas.width + cardWidth)) {
                 const index = particles.indexOf(this);
                 particles.splice(index, 1);
                 return false;
             }
 
-            // bounce from floor
+            // Simula o impacto e o quique no chão.
             if (y > canvas.height - cardHeight) {
                 y = canvas.height - cardHeight;
                 sy = -sy * 0.85;
@@ -661,13 +661,13 @@ const win = (canvasWidth, canvasHeight, canvasLeft, canvasTop) => {
 };
 
 function initSolitaire() {
-    // add sprite
+    // Adiciona o sprite das faces das cartas ao CSS.
     const css = document.createElement('style');
     const styles = `.card--front { background-image: url("${spriteImg}"); }`;
     css.appendChild(document.createTextNode(styles));
     document.head.appendChild(css);
 
-    // create all cards
+    // Cria as 52 cartas.
     for (let i = 0; i < 4; i++) {
         for (let j = 1; j <= 13; j++) {
             const el = document.createElement('div');
@@ -686,7 +686,7 @@ function initSolitaire() {
         }
     }
 
-    // create aces decks
+    // Cria as quatro fundações.
     for (let i = 0; i < 4; i++) {
         const el = document.createElement('div');
         el.classList.add(
@@ -700,7 +700,7 @@ function initSolitaire() {
         finishContainerEl.appendChild(el);
     }
 
-    // create desk decks
+    // Cria as sete colunas do tabuleiro.
     for (let i = 0; i < 7; i++) {
         const el = document.createElement('div');
         el.classList.add(
@@ -720,6 +720,47 @@ function initSolitaire() {
     window.onmouseup = releaseMove;
 
     resetGame();
+    initAutomation({
+        gameEl,
+        resetGame,
+        getSnapshot: createAutomationSnapshot
+    });
+}
+
+/**
+ * Converte o estado atual do jogo para o formato consumido pela automação.
+ * As caixas usam coordenadas relativas ao tabuleiro, como uma predição visual.
+ */
+function createAutomationSnapshot() {
+    const gameRect = gameEl.getBoundingClientRect();
+    // Traduz uma carta interna em valor, naipe, cor e caixa delimitadora.
+    const describeCard = index => {
+        const card = state.cards[index];
+        const rect = card.el.getBoundingClientRect();
+        return {
+            id: index,
+            rank: card.number,
+            suit: card.type,
+            color: state.colors[card.type],
+            facingUp: card.facingUp,
+            box: {
+                x1: rect.left - gameRect.left,
+                y1: rect.top - gameRect.top,
+                x2: rect.right - gameRect.left,
+                y2: rect.bottom - gameRect.top
+            }
+        };
+    };
+    const pile = cards => cards.map(describeCard);
+
+    return {
+        width: gameRect.width,
+        height: gameRect.height,
+        stockCount: state.deal.pile.cards.length,
+        waste: pile(state.deal.deal.cards.slice(-1)),
+        foundations: state.finish.map(item => pile(item.cards)),
+        tableau: state.desk.map(item => pile(item.cards))
+    };
 }
 
 window.onload = initSolitaire;

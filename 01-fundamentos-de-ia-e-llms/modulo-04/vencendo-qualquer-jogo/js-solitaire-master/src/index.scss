@@ -206,6 +206,15 @@ body {
     }
 }
 
+.ai-toggle {
+    margin-left: 16px;
+}
+
+.ai-status {
+    float: right;
+    font-family: monospace;
+}
+
 .finish-dest {
     box-shadow: 0 0 0 1px #03ffff;
 }
