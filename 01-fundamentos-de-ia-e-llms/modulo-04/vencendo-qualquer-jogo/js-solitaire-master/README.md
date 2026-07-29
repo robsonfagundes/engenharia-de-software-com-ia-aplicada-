@@ -69,8 +69,20 @@ A descrição completa da arquitetura, estratégia e alterações está em
 
 ## Imagens
 
-![JavaScript Solitaire](https://raw.githubusercontent.com/uzi88/js-solitaire/master/screen-shot.png)
+### Referência: automação do Duck Hunt
 
-![JavaScript Solitaire Win](https://raw.githubusercontent.com/uzi88/js-solitaire/master/screen-shot-win.png)
+![Duck Hunt executando a detecção do alvo e exibindo as coordenadas previstas](duckhunt.png)
+
+### Solitaire AI antes da execução
+
+![Tabuleiro do Solitaire AI antes do início da automação](solitarieAI.png)
+
+### Solitaire AI em execução
+
+![Solitaire AI movimentando as cartas e exibindo as métricas no console](solitarieAI-2.png)
+
+### Vitória e relatório final
+
+![Solitaire AI após vencer a partida, com o relatório de vitória no console](solitarieAI-1.png)
 
 Demo original: http://radovanjanjic.com/js-solitaire/
