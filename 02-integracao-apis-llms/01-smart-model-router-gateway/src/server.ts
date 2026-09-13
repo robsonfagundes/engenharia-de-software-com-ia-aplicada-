@@ -4,7 +4,7 @@ import { OpenRouterService } from "./openrouterService.ts";
 export const createServer = (routerService: OpenRouterService ) => {
     const app = Fastify({ logger: false })
 
-    app.post('/', {
+    app.post('/chat', {
         schema: {
             body: {
                 type: 'object',
